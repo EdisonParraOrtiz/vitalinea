@@ -12,18 +12,24 @@ const Header = () => {
 
   return (
     <header className="header">
-      <NavLink className='header__logo-navlink' to="/">
-        <h1 className="header__logo">e-commerce</h1>
-      </NavLink>
       <i onClick={handleHamClick} className="fa-solid fa-bars header__menu-ham"></i>
       <nav ref={navbar} className="header__nav header__nav--close">
         <ul className="header__list">
+         
+          <li className="header__item">
+            <NavLink 
+              className={({isActive}) => isActive ? 'header__navlink active-link': 'header__navlink'} 
+              to=""
+            >
+              Vitealine
+            </NavLink>
+          </li>
           <li className="header__item">
             <NavLink 
               className={({isActive}) => isActive ? 'header__navlink active-link': 'header__navlink'} 
               to="/login"
             >
-              Login
+              Nuestros productos
             </NavLink>
           </li>
           <li className="header__item">
@@ -31,7 +37,7 @@ const Header = () => {
               className={({isActive}) => isActive ? 'header__navlink active-link' : 'header__navlink'}
               to="/purchases"
             >
-              Purchases
+              Disfruta cuidarte
             </NavLink>
           </li>
           <li className="header__item">
@@ -39,7 +45,7 @@ const Header = () => {
               className={({isActive}) => isActive ? 'header__navlink active-link' : 'header__navlink'}
               to="/cart"
             >
-              Cart
+              Blog
             </NavLink>
           </li>
         </ul>

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 /* ---- RESET ---- */
-:root {
+/* :root {
   font-family: 'Lato', sans-serif;
   --color-red: #5c769c;
 }
@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 body {
-  margin: 0;
+  margin: 0 auto;
 }
 h1, h2, h3, h4, p, ul {
   margin-top: 0;
@@ -29,8 +29,11 @@ img {
 input{
   outline: none;
 }
+
+*/
 .app {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
+  margin: auto 0;
+} 

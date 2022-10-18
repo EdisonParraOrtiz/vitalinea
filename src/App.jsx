@@ -1,3 +1,4 @@
+import { Route, Routes } from 'react-router-dom'
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
@@ -9,7 +10,16 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <h1>Edison</h1>
+      <Routes>
+          {/* <Route path='/' element={<Home />} /> */}
+          {/* <Route path='/about' element={<About />} />
+          <Route path='/skills' element={<Skills/>} />
+          <Route path='/services' element={<Services/>} />
+          <Route path='/portfolio' element={<Projects/>} />
+          <Route path='/contact' element={<Contact/>} /> */}
+
+      </Routes>
+      
    
     </div>
   )
