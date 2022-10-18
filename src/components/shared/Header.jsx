@@ -15,15 +15,15 @@ const Header = () => {
       <i onClick={handleHamClick} className="fa-solid fa-bars header__menu-ham"></i>
       <nav ref={navbar} className="header__nav header__nav--close">
         <ul className="header__list">
-         
+       
           <li className="header__item">
             <NavLink 
               className={({isActive}) => isActive ? 'header__navlink active-link': 'header__navlink'} 
-              to=""
+              to="/"
             >
-              Vitealine
+              Home
             </NavLink>
-          </li>
+          </li> 
           <li className="header__item">
             <NavLink 
               className={({isActive}) => isActive ? 'header__navlink active-link': 'header__navlink'} 
