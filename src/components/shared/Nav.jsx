@@ -40,13 +40,13 @@ const Nav = () => {
             <a href="/">Home</a>
           </li>
           <li>
-            <a href="">Nuestros productos</a>
+            <a href="/">Nuestros productos</a>
           </li>
           <li>
-            <a href="">Disfruta cuidarte</a>
+            <a href="/">Disfruta cuidarte</a>
           </li>
           <li>
-            <a href="">Blog</a>
+            <a href="/">Blog</a>
           </li>
           <li>
             <a  className="rs"href="https://es-la.facebook.com/" target='blank'><i class="fa-brands fa-facebook"></i></a>

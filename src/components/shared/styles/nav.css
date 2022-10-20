@@ -11,6 +11,8 @@
     font-size: 20px;
 }
 
+
+
 @media screen and (max-width:1080px){
 
     /* .navContainer{
@@ -109,10 +111,15 @@
 
     .ul>li>a:hover{
         color: red;
+        background-color: white;
     }
 
     .ul>li{
         padding: 0 15px;
+    }
+
+    .ul>li:hover{
+       background-color: white;
     }
 
     .nav{
