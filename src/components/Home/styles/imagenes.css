@@ -64,7 +64,7 @@
 
 .titulo-vitalinea{
     position: absolute;
-    top: 355px;
+    top: 375px;
     text-align: center;
     color: #52247c;
     font-size: 34px;
@@ -91,10 +91,10 @@
     position: absolute;
     top: -240px;
     width: 10rem;
-    background-color: blueviolet;
+    background-color: rgb(137, 66, 204);
     color: white;
     text-decoration: none;
-    padding: 6px 40px;
+    padding: 6px 20px;
     margin-left: 5px;
     text-align: center;
 }
@@ -127,3 +127,181 @@
     transition: 1s ease-in-out;
 }
 
+.imagen_fresa-m{
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .contenedor-imagenes{
+        width: 800px;
+
+    }
+
+    .imagen_fresa{
+        position: relative;
+        width: 800px;
+        left: 200px;
+    }
+
+    .contenedor_sabores{
+        top: 70px;
+        left: 500px;
+    }
+
+    .titulo-vitalinea{
+        font-size: 22px;
+        left: 60px;
+        top: 345px;
+    }
+    .parrafo-descripcion{
+        font-size: 14px;
+        left: 60px;
+        width: 350px;
+        top: 380px;
+    }
+
+
+    .botones-logo{
+        left: 550px;
+        top: 450px;
+ 
+    }
+
+    .boton-walmart{
+        top: -23    5px;
+        width: 10rem;
+        padding: 3px 4px;
+        left: -50px;
+        font-size: 14px;
+    }
+
+
+    .logo-azul{
+        top: -200px; 
+        width: 45px;
+        left: -40px; 
+    }
+    .logo-cafe{
+        width: 45px;
+        top: -200px;
+        left: 20px;
+    }
+    
+    .logo-scroll{
+        position: absolute;
+        top: -110px;
+        width: 45px;
+        left: 20px;
+    }
+
+    .contenedor_sabores{
+        top: 70px;
+        left: 500px;
+        gap:  10px;
+        width: 270px;
+    
+    }
+
+    .boton__guayaba, .boton__toronja, .boton__fresa{
+        padding: 0px 8px;
+        height: 18px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-size: 14px;
+        color: black;
+        border:  1px solid gray;
+        cursor: pointer;
+    }
+    .p-sabor{
+        font-size: 14px;
+    }
+    
+}
+
+@media screen and (max-width: 576px) {
+
+
+    .imagen_fresa-m{
+        position: relative;
+        display: initial;
+        width: 576px;
+        margin: auto 0;
+        left: 157px;
+    }
+ 
+    .imagen_fresa{
+        display: none;
+    }
+
+    .contenedor_sabores{
+        top: 380px;
+        left: 240px;
+        gap: 1px;
+        width: 450px;
+
+    }
+
+    .p-sabor{
+        margin: 0;
+        font-size: 17px;
+    
+    }
+    
+     .boton__guayaba, .boton__toronja, .boton__fresa{
+        padding: 2px 25px;
+        height: 18px;
+        font-size: 17px;
+    }
+
+    .titulo-vitalinea{
+        font-size: 26px;
+        left: -188px;
+        top: 670px;
+    }
+    .parrafo-descripcion{
+        font-size: 18px;
+        left: -188px;
+        width: 400px;
+        top: 715px;
+    }
+
+    .botones-logo{
+        left: 550px;
+        top: 450px;
+ 
+    }
+
+    .boton-walmart{
+        top: 120px;
+        width: 19rem;
+        padding: 9px 50px;
+        left: -295px;
+        font-size: 18px;
+    }
+
+
+    .logo-azul{
+        top: 190px;
+        width: 95px;
+        left: -200px; 
+    }
+    .logo-cafe{
+        width: 105px;
+        top: 190px;
+        left: -90px;
+    }
+
+    .logo-scroll{
+        width: 75px;
+        top: 360px;
+        left: -136px;
+    }
+ 
+}
+
+@media screen and (max-width: 375px) {
+  
+  
+ 
+} 

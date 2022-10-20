@@ -2,6 +2,7 @@ import React from "react";
 import Imagenes from "./Imagenes";
 import "./styles/home.css";
 import familiaVitelineaPC from "./../../../public/graphics/familia-vitelinea-pc.png";
+import familiaVitelinea from "./../../../public/graphics/familia-vitelinea.png";
 import logoUno from "../../../public/graphics/logo-uno.png";
 import logoDos from "../../../public/graphics/logo-dos.png";
 
@@ -57,7 +58,7 @@ const Home = () => {
               <li className="lista-derecha">0.0</li>
               <li className="lista-derecha">92.7</li>
               <li className="lista-derecha">199.6</li>
-              <li className="lista-derecha">22</li>
+              <li className="lista-derecha"></li>
             </ul>
           </div>
       </div>
@@ -66,6 +67,7 @@ const Home = () => {
         <h2 className="titulo-familia">LA FAMILIA VITALINEA</h2>
 
         <img  className="imagen-familia-vitalinea" src={familiaVitelineaPC} alt="" />
+        <img  className="imagen-familia-vitalinea-m" src={familiaVitelinea} alt="" />
         <p className="vitalineo-griego">Vitalineo griego</p>
         <p className="vitalineo-azucar">Vitalineo sin Azúcar</p>
         <p className="vitalineo-azucar-uno">Vitalineo sin Azúcar</p>

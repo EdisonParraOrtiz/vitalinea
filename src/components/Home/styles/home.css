@@ -7,7 +7,7 @@
   justify-content: center;
   margin: 0 auto; 
   max-height: 1920;
-  margin-top: 56px;
+  margin-top: 60px;
   transform: translate(0px);
 }
 
@@ -26,7 +26,7 @@
   color: rgb(82, 36, 124);
   font-size: 32px;
   font-weight: initial;
-  top: -18px;
+  top: 10px;
   left: 270px;
 }
 
@@ -83,6 +83,7 @@
   margin: auto 0;
   padding: 0;
   right: 100px;
+  z-index: 2;
   
 }
 
@@ -106,8 +107,7 @@
   top: 50px;
   right: -0px;
   background-color: rgb(252, 247, 247);
-  padding: 8px;
-   
+  padding: 8px; 
 }
 
 .lista, .lista-derecha{
@@ -125,7 +125,8 @@
 .contenedor-familia{
   position: relative;
   margin: 0;
-  transform: translateY(340px);
+  top: 350px;
+  left: -250px;
   
 }
 
@@ -135,17 +136,20 @@
   font-size: 32px;
   font-weight: initial;
   text-align: center;
-  left: 340px;
+  left: 420px;
   top: 150px;
   z-index: 2;
+  width: 700px;
 }
 
 
 .imagen-familia-vitalinea{
   position: absolute;
-  width: 1080;
-  background-size: cover;
+  width: 1080px;
+  background-size: contain;
   top: -320px;
+  left: 250px;
+  
 }
 
 .vitalineo-griego,
@@ -160,14 +164,18 @@
 
 
 .vitalineo-griego{
-  left: 160px;
+  position: absolute;
+  left: 410px;
 
 }
 .vitalineo-azucar{
-  left: 470px;
+  position: absolute;
+  left: 720px;
 }
 .vitalineo-azucar-uno{
-  left: 770px;
+  position: absolute;
+  left: 1020px;
+  width: 300px;
 }
 
 
@@ -180,6 +188,7 @@
 
 .logo-circulo-azul{ position: absolute;
   width: 100px;
+  /* left: -100px; */
 
 }
 .logo-negro{
@@ -188,151 +197,312 @@
 
 }
 
-.footer{ position: relative;
+.footer{ 
+  position: relative;
   height: 50px;
   top: 900px;
 }
 
 .parrafo-footer{
+  position: absolute;
   margin: 20px;
   font-size: 16px;
   text-align: start;
   margin-bottom: 50px;
-  margin-left: 100px;
+  left: 80px;
+}
+
+.imagen-familia-vitalinea-m{
+  display: none;
+}
+
+
+ 
+
+ @media screen and (max-width: 768px) {
+
+  
+ .contenedor{
+  width: 768px;
+  transform: translate(-155px);
+}
+
+.informacion-titulo{
+  position: absolute;
+  font-size: 24px;
+  transform: translate(65px);
+  top: 20px;
+}
+
+.informacion-nutrimental{
+  left: 330px;
+  z-index: 2;
+}
+.contenedor__lista{
+  right: -190px;
+}
+
+.titulo-familia{ 
+  width: 500px;
+  left: 620px;
+  top: 60px;
+  font-size: 22px;
+}
+
+
+.imagen-familia-vitalinea{
+  width: 810px;
+  height: auto;
+  left: 450px;
+}
+
+.vitalineo-griego{
+  top: 330px;
+  left: 570px;
+  font-size: 14px;
+
+}
+.vitalineo-azucar{
+  left: 815px;
+  top: 330px;
+  font-size: 14px;
+  width: 300px;
+}
+.vitalineo-azucar-uno{
+  left: 1030px;
+  top: 330px;
+  font-size: 14px;
+}
+
+ .logo-circulo-azul{ 
+  left: 150px;
+}
+
+.informacion{
+  width: 270px;
+  padding: 3px;
+}
+
+.contenedor-lista-derecha{
+  top: 55px;
+  padding: 0;
+  width: 50px;
+  left: -65px;
+}
+
+.lista, .lista-derecha{
+  padding: 1px;
+
+}
+
+.contenedor-logos{ 
+  position: relative;
+  top: 736px;
+  left: 110px;
 } 
 
 
-/* @media screen and (min-width: 576px) {
+.logo-circulo-azul{ position: absolute;
+  width: 80px;
+  /* left: -100px; */
+
+}
+
+
+.footer{ 
+  top: 666px;
+  left: 220px;
+}
+
+.parrafo-footer{
+  position: absolute;
+  margin: 20px;
+  font-size: 14px;
+  text-align: start;
+  margin-bottom: 50px;
+  left: 92px;
+} 
  
 }
 
-@media screen and (min-width: 768px) {
- 
-}
+@media screen and (max-width: 576px) {
 
-@media screen and (min-width: 1080px) {
   .contenedor{
-    width: 1080; 
-    max-height: 1920;
+    width: 576px;
   }
-  
-  .logo{
-    margin-top: 10px;
-    margin-left: 20px;
-  }
-  
-   .imagen-logo{
-    background: url('../../../../public/graphics/fondo-pc.png');
-   }
 
-  .imagen{
-     
-      width: 400px;
-      height: 300px;
-      background-color: aqua;margin: 5px;
-      margin-left: 20px;
+
+  .imagen-familia-vitalinea{
+    display: none;
+  }
+
+  .imagen-familia-vitalinea-m{
+    display: initial;
+    position: relative;
+    width: 580px;
+    left: 400px;
+    top: 380px;
+  }
+
+  .informacion-titulo{
+    position: absolute;
+    font-size: 24px;
+    transform: translate(-10px);
+    top: 20px;
   }
   
-  .information-nutrimental{
-    margin-left: 20px;
+  .informacion-nutrimental{
+    top: 80px;
+    left: 260px;
+    width: 590px;
   }
-  
-  .informacion{
-    color: rgb(82, 36, 124);
-    font-size: 21px;
-    font-weight: initial;
+
+
+  .parrafo-ingredientes{
+    width: 400px;
+    font-size: 16px;
   }
+
+
   
   .subtitulo-vitealinea{
     margin-left: 20px;
   }
-  
-  .parrafo-ingredientes{
-    margin-right: 10px;
-  }
-  
-  
   .contenedor__lista{
-    display: flex;
-    flex-direction: row;
+    top: 200px;
+    right: 0px;
   }
   
-  .lista{
-    text-align: right;
-    margin-right: 12px;
+  
+  .informacion{
+    top: 100px;
+    width: 270px;
+    padding: 3px;
+    left: -320px;
+    width: 350px;
   }
   
   .contenedor-lista-derecha{
-     margin-top: 22px;
-     margin-left: 5px;
+    top: 100px;
+    padding: 0;
+    width: 50px;
+    left: 30px;
   }
   
   .lista, .lista-derecha{
-    list-style: none;
-    font-size: 12px;
-    padding: 0;
-    list-style-position: outside;
-    transform: translateX(-40px);
-    color: black;
+    padding: 8px;
+  
   }
-  
-  .lista-derecha{
-    transform: translate(-80px);
+
+  .titulo-familia{ 
+    width: 500px;
+    left: 460px;
+    top: 460px;
+    font-size: 22px;
   }
+
+  .vitalineo-griego{
+    top: 970px;
+    left: 740px;
+    font-size: 18px;
+    width: 200px;
   
-  
-  .contenedor-familia{
-    position: relative;
-    margin: 0;
-    
   }
-  
-  .titulo-familia{
-    transform: translateY(90px);
-    color: rgb(130, 60, 196);
-    font-size: 20px;
-    font-weight: initial;
-    text-align: center;
-  }
-  
-  .vitalineo-griego,
   .vitalineo-azucar{
+    top: 970px;
+    left: 480px;
+    font-size: 18px;
+    width: 200px;
+  }
+  .vitalineo-azucar-uno{
+    display: none;
+  }
+  
+
+  .logo-circulo-azul{ 
     position: absolute;
-    color: rgb(130, 60, 196);
-    top: 450px;
-    left: 40px;
+    width: 100px;
+    left: 110px;
+
   }
-  
-  .vitalineo-azucar{
-    left: 210px;
-  
-  }
-  
-  
-  /* .logos{ position: relative;
-  
-  } */
-  
-/*   
-  .logo-circulo-azul{
-    transform: translateX(30px);
-  
-  }
+
   .logo-negro{
-    transform: translateX(170px);
+    position: relative;
+    visibility: visible;
+    left: 265px;
+    top: 10px;
   
   }
   
-  .footer{
-    height: 50px;
+  
+  .footer{ 
+    top: 746px;
+    left: 160px;
   }
   
   .parrafo-footer{
+    position: absolute;
     margin: 20px;
-    font-size: 13px;
+    font-size: 14px;
     text-align: center;
     margin-bottom: 50px;
+    left: 0px;
+    width: 500px;
+  } 
+ 
+}
+
+@media screen and (max-width: 375px) {
+  .contenedor{
+    width: 375px;
+  }
+
+  .imagen-familia-vitalinea-m{
+    width: 570px;
+    left: 420px;
+  }
+
+  .informacion-titulo{
+    width: 400px;
   }
   
+  .informacion{
+    left: -120px;
+    width: 350px;
+  }
+  
+  .contenedor-lista-derecha{
+    width: 50px;
+    left: 230px;
+  }
+  
+
+
+  .logo-circulo-azul{ 
+    position: absolute;
+    width: 100px;
+    left: 110px;
+
+  }
+
+  .logo-negro{
+    position: relative;
+    visibility: visible;
+    left: 265px;
+    top: 10px;
+  
+  }
+  
+  
+  .footer{ 
+    top: 746px;
+    left: 160px;
+  }
+  
+  .parrafo-footer{
+    font-size: 16px;
+  } 
+  
+  
  
-}  */
+} 

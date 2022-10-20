@@ -58,6 +58,9 @@ const Nav = () => {
             <a className="rs"href="https://www.youtube.com/" target='blank'><i class="fa-brands fa-youtube"></i></a>
           </li>
         </ul>
+        <li>
+            <a  href="/"><img className="logo-2"  src={logo} alt="logo" /></a>
+          </li>
       </nav>
     </div>
   );

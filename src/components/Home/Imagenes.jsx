@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles/imagenes.css";
 import imagenfresaPC from "..//../../public/graphics/Imagen-fresa-pc.png";
+import imagenfresa from "..//../../public/graphics/Imagen-producto fresa.png";
 import logoAzul from "..//../../public/graphics/logo-azul.png";
 import logoCafe from "..//../../public/graphics/logo-cafe.png";
 import logoScroll from "..//../../public/graphics/logo-scroll.png";
@@ -10,6 +11,7 @@ const Imagenes = () => {
     <div className="contenedor-imagenes">
       <div className="información-imagenes">
         <img className="imagen_fresa" src={imagenfresaPC} alt="imagen_fresa" />
+        <img className="imagen_fresa-m" src={imagenfresa} alt="imagen_fresa" />
       </div>
       <div className="contenedor_sabores">
         <p className="p-sabor">Sabor a:</p>
